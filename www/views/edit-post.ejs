@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partiols/ico.ejs')%>
+<%- include('./partiols/add.ejs')%>
+<body>
+  <%- include('./partiols/nav.ejs') %>
+
+      <div class="title">
+        <h3><%= title%></h3>
+      </div>
+
+      <form id="contact-form" method="post" action="/edit/<%= post.id%>?_method=PUT">
+        <div class="form-info">
+          <label>Post Title
+            <input type="text" name="title" value="<%= post.title%>">
+          </label>
+          <label>Author
+            <input type="text" name="author" value="<%= post.title%>">
+          </label>
+        </div>
+        <div class="form-text">
+          <label>
+            <textarea name="text"><%= post.text%></textarea>
+          </label>
+        </div>
+        <div class="form-button">
+          <input class="btn" type="submit" value="Submit">
+        </div>
+      </form>
+</body>
+</html>

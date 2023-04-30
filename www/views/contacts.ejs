@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partiols/ico.ejs')%>
+  <%- include('./partiols/contacts.ejs')%>
+<body>
+    <%- include('./partiols/nav.ejs') %>
+    <ul class="contact">
+     <% if (social.length) { %>
+      <% social.forEach(({name , link}) => { %>
+          <li><a href="<%= link%> " target="_blank"><%=name %></a></li>
+    <%  })%>
+    <% }  else { %>
+    <div>
+      <p>not post</p>
+    </div>
+    <%} %>
+  </ul>
+</body>
+</html>

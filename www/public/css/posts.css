@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+  background: linear-gradient(90deg, rgb(0, 113, 226), rgb(0, 0, 0));
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+
+.del {
+    display: inline-block;
+    color: blueviolet;
+    float:right;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.6s ease ;
+    transition: color 0.6s ease ;
+    cursor: pointer;
+    border: none;
+}
+
+
+.del:hover {
+    background-color: rgb(3, 74, 137);
+    color: aliceblue;
+    transition: background-color 0.6s ease ;
+    transition: color 0.6s ease ;
+}
+
+h1 {
+   color: aliceblue;
+}
+
+
+nav{
+    transform: translateY(20px);
+    width: 90%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+
+.mid {
+  height: auto;
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 5;
+-webkit-box-orient: vertical;
+}
+
+ul{
+  width: 60%;
+  padding: 10px 5px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+ul > li {
+    padding: 8px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    background-color: rgb(171, 171, 172);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color 0.7s ease;
+    transition: background-color 0.7s ease;
+}
+
+ul > li:hover{
+    background-color: rgb(132, 132, 132);
+    color: aliceblue;
+
+}
+
+ul > li:hover a{
+    color: aliceblue;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+ul.ul {
+    margin: 0 !important;
+    width: 65%;
+    height: auto;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    transition: width 0.7s linear;
+}
+
+ul.ul > li {
+    padding: 20px;
+    width: 27vw;
+    height: 27vh;
+    background-color: black;
+    color: aliceblue;
+    transition: all 0.5s ease;
+}
+
+ul.ul > li  a {
+    color: aliceblue;
+    transition: all 0.5s ease;
+}
+
+ul.ul > li:hover{
+    background-color: rgb(45, 6, 6);
+}
+
+
+ul.ul > li:hover a {
+    color: rgb(99, 99, 99);
+}
+
+
+
